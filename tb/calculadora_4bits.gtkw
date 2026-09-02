@@ -1,0 +1,63 @@
+[*]
+[*] Sesion de GTKWave para calculadora_4bits.vcd
+[*] Testbench propio (tb/calculadora_4bits_tb.v) -- 17 casos
+[*]
+[dumpfile] "calculadora_4bits.vcd"
+[savefile] "calculadora_4bits.gtkw"
+[timestart] 0
+[size] 1600 900
+[pos] -1 -1
+*-16.0 0 -1 -1 -1 -1 -1 -1
+[treeopen] calculadora_4bits_tb.
+[treeopen] calculadora_4bits_tb.uut.
+[treeopen] calculadora_4bits_tb.uut.core.
+[sst_width] 300
+[signals_width] 280
+[sst_expanded] 1
+[sst_vpaned_height] 340
+@200
+-INTERFAZ DE LA EVALUACION
+@28
+calculadora_4bits_tb.clk
+calculadora_4bits_tb.ejecutar
+calculadora_4bits_tb.codigo[2:0]
+calculadora_4bits_tb.sel_op2
+@22
+calculadora_4bits_tb.op1[3:0]
+calculadora_4bits_tb.op2_ext[3:0]
+@200
+-SEGUNDO OPERANDO (tras el mux)
+@22
+calculadora_4bits_tb.uut.b[3:0]
+@200
+-DECODIFICADOR one-hot
+@28
+calculadora_4bits_tb.uut.core.sel_rst
+calculadora_4bits_tb.uut.core.sel_add
+calculadora_4bits_tb.uut.core.sel_sub
+calculadora_4bits_tb.uut.core.sel_rsub
+calculadora_4bits_tb.uut.core.sel_shl
+calculadora_4bits_tb.uut.core.sel_shr
+@200
+-CONTROL DE LA ALU
+@28
+calculadora_4bits_tb.uut.core.sub
+calculadora_4bits_tb.uut.core.swap
+@200
+-VIAS INTERNAS
+@22
+calculadora_4bits_tb.uut.core.x[3:0]
+calculadora_4bits_tb.uut.core.yc[3:0]
+calculadora_4bits_tb.uut.core.sum[3:0]
+calculadora_4bits_tb.uut.core.shl[3:0]
+calculadora_4bits_tb.uut.core.shr[3:0]
+@200
+-REGISTRO DE RESULTADO
+@22
+calculadora_4bits_tb.uut.r_next[3:0]
+@28
+calculadora_4bits_tb.uut.rr.load
+@22
+calculadora_4bits_tb.resultado[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

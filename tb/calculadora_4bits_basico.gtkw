@@ -1,0 +1,63 @@
+[*]
+[*] Sesion de GTKWave para el testbench de la catedra
+[*] Testbench propio (tb/calculadora_4bits_tb_basico.v) -- 17 casos
+[*]
+[dumpfile] "calculadora_4bits_tb_basico.vcd"
+[savefile] "calculadora_4bits_basico.gtkw"
+[timestart] 0
+[size] 1600 900
+[pos] -1 -1
+*-16.0 0 -1 -1 -1 -1 -1 -1
+[treeopen] calculadora_4bits_tb_basico.
+[treeopen] calculadora_4bits_tb_basico.dut.
+[treeopen] calculadora_4bits_tb_basico.dut.core.
+[sst_width] 300
+[signals_width] 280
+[sst_expanded] 1
+[sst_vpaned_height] 340
+@200
+-INTERFAZ DE LA EVALUACION
+@28
+calculadora_4bits_tb_basico.clk
+calculadora_4bits_tb_basico.ejecutar
+calculadora_4bits_tb_basico.codigo[2:0]
+calculadora_4bits_tb_basico.sel_op2
+@22
+calculadora_4bits_tb_basico.op1[3:0]
+calculadora_4bits_tb_basico.op2_ext[3:0]
+@200
+-SEGUNDO OPERANDO (tras el mux)
+@22
+calculadora_4bits_tb_basico.dut.b[3:0]
+@200
+-DECODIFICADOR one-hot
+@28
+calculadora_4bits_tb_basico.dut.core.sel_rst
+calculadora_4bits_tb_basico.dut.core.sel_add
+calculadora_4bits_tb_basico.dut.core.sel_sub
+calculadora_4bits_tb_basico.dut.core.sel_rsub
+calculadora_4bits_tb_basico.dut.core.sel_shl
+calculadora_4bits_tb_basico.dut.core.sel_shr
+@200
+-CONTROL DE LA ALU
+@28
+calculadora_4bits_tb_basico.dut.core.sub
+calculadora_4bits_tb_basico.dut.core.swap
+@200
+-VIAS INTERNAS
+@22
+calculadora_4bits_tb_basico.dut.core.x[3:0]
+calculadora_4bits_tb_basico.dut.core.yc[3:0]
+calculadora_4bits_tb_basico.dut.core.sum[3:0]
+calculadora_4bits_tb_basico.dut.core.shl[3:0]
+calculadora_4bits_tb_basico.dut.core.shr[3:0]
+@200
+-REGISTRO DE RESULTADO
+@22
+calculadora_4bits_tb_basico.dut.r_next[3:0]
+@28
+calculadora_4bits_tb_basico.dut.rr.load
+@22
+calculadora_4bits_tb_basico.resultado[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

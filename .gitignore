@@ -1,0 +1,43 @@
+# =====================================================================
+# Archivos generados. Nada de lo que esta aca se versiona: todo se
+# vuelve a producir con sim.bat.
+# =====================================================================
+
+# --- Simulacion ------------------------------------------------------
+# Ejecutables de iverilog (en Windows salen sin extension, en Linux
+# tampoco la llevan; los .exe aparecen segun la version).
+# Ojo: 'sim_*' no toca a sim.bat, que si se versiona.
+sim_*
+
+# Ondas. top.vcd llega a ~620 MB: GitHub rechaza cualquier archivo de
+# mas de 100 MB, asi que esto no es opcional.
+*.vcd
+*.fst
+*.fst.hier
+
+# --- Sintesis y bitstream --------------------------------------------
+# Se regeneran con 'sim.bat fpga' (o 'make') a partir de src/ y del .pcf.
+calc.json
+calc.asc
+calc.bin
+*.blif
+*.rpt
+
+# --- Empaquetados ----------------------------------------------------
+# El repo ES la entrega; no hace falta un zip del repo dentro del repo.
+*.zip
+
+# --- Notas internas --------------------------------------------------
+# Chuleta de uso para la demo: es para nosotros, no forma parte de la
+# entrega. Por eso el README no la referencia.
+CHEATSHEET.md
+
+# --- Notas internas --------------------------------------------------
+# Chuleta de uso propia del grupo, no forma parte de la entrega.
+# Lo que hace falta para operar la placa esta en el README.
+CHEATSHEET.md
+
+# --- Basura del sistema ----------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store

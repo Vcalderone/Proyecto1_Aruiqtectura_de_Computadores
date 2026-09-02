@@ -1,0 +1,53 @@
+[*]
+[*] Sesion de GTKWave para alu_wave.vcd
+[*]
+[dumpfile] "alu_wave.vcd"
+[savefile] "alu_wave.gtkw"
+[timestart] 0
+[size] 1600 900
+[pos] -1 -1
+*-16.0 0 -1 -1 -1 -1 -1 -1
+[treeopen] alu_wave_tb.
+[sst_width] 260
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 340
+@200
+-ENTRADAS
+@28
+alu_wave_tb.op[2:0]
+@22
+alu_wave_tb.a[3:0]
+alu_wave_tb.b[3:0]
+@200
+-DECODIFICADOR one-hot
+@28
+alu_wave_tb.sel_rst
+alu_wave_tb.sel_add
+alu_wave_tb.sel_sub
+alu_wave_tb.sel_rsub
+alu_wave_tb.sel_shl
+alu_wave_tb.sel_shr
+@200
+-CONTROL
+@28
+alu_wave_tb.sub
+alu_wave_tb.swap
+@200
+-VIA ARITMETICA
+@22
+alu_wave_tb.x[3:0]
+alu_wave_tb.y[3:0]
+alu_wave_tb.yc[3:0]
+alu_wave_tb.sum[3:0]
+@200
+-VIA DESPLAZAMIENTO
+@22
+alu_wave_tb.shl[3:0]
+alu_wave_tb.shr[3:0]
+@200
+-SALIDA
+@22
+alu_wave_tb.r[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
